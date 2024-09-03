@@ -6,7 +6,7 @@ const Code = ({ className, children }) => {
 	return (
 		<span
 			className={cn(
-				"bg-accent/30 border border-accent p-1 text-primary rounded-sm",
+				"bg-accent/30 font-mono border hover:bg-accent/50 transition-colors border-accent px-1 py-0.5 text-primary rounded-sm",
 				className
 			)}
 		>
@@ -18,18 +18,18 @@ const Code = ({ className, children }) => {
 const Hero = () => {
 	return (
 		<Section className="flex max-lg:flex-col items-start">
-			<div className="flex-[2]">
-				<h2 className="font-caption text-5xl text-primary">Emmanuelle Jupon</h2>
+			<div className="flex-[2] flex flex-col gap-2">
+				<h2 className="font-caption font-bold text-5xl text-primary">Emmanuelle Jupon</h2>
 				<h3 className="text-3xl font-caption">
 					Développeuse Front-End | UX/UI Designer | Création de Sites Web
 				</h3>
-				<p>
-					Je suis <Code>Développeuse</Code>
+				<p className="text-base">
+					Je suis on{" "} <Code className="inline-flex items-center gap-1">Développeuse front-end 👩‍💻</Code> passionnée par le design UX/UI. J'aime collaborer sur des projets qui allient créativité et performance, en utilisant des outils comme React et Figma. Ensemble, nous pouvons créer des expériences digitales qui font la différence !
 				</p>
 			</div>
 			<div className="flex-1">
 				<img
-					src="./photo-pastel.png"
+					src="./photo_profile.png"
 					className="w-full h-auto max-w-sm"
 					alt="Emmanuelle Jupon picture"
 				/>
