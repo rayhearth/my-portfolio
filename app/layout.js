@@ -1,6 +1,8 @@
 import { Oswald, Fredoka } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Header from "./_components/Header.jsx";
+import Spacing from "./_components/Spacing.jsx";
 
 const oswald = Oswald({ 
 	subsets: ["latin"],
@@ -60,7 +62,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="fr" className="h-full">
-			<body className={cn(fredoka, oswald.variable, "h-full bg-background text-foreground"  )}>{children}</body>
+			<body className={cn(fredoka, oswald.variable, "bg-background text-foreground"  )}>
+				<Header/>
+				<Spacing size="md" />
+				<main>{children}</main>
+			</body>
 		</html>
 	);
 }

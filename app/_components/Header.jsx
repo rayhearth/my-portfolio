@@ -3,35 +3,43 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Section from "./Section";
-import Githubicon from "./icons/Githubicon";
-import Linkedin from "./icons/Linkedin";
-import Insta from "./icons/Insta";
 
 const Header = () => {
 	return (
-		<header className="sticky top-0 py-4 size-full">
-			<Section className="flex items-baseline">
-				<h1 className="text-lg font-bold text-primary">Emmanuelle Jupon</h1>
+		<header className="sticky bg-background/70 top-0 py-4 size-full  border-b">
+			<Section className="flex items-center">
+				<img
+					src="logo.svg"
+					alt="logo de la société jemmadesign créée et dirigée par Emmanuelle Jupon Graphiste et développeuse front-end"
+					className="h-5 flex"
+				/>
 				<div className="flex-1" />
-				<ul className="flex item-center gap-2">
+				<ul className="flex items-center gap-2">
 					<Link
-						href="https://github.com/rayhearth"
-						className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+						href="/"
+						className={cn(buttonVariants({ variant: "outline" }), "p-0")}
 					>
-						<Githubicon size={12} className="text-foreground" />
+						Accueil
 					</Link>
 					<Link
-						href="https://www.linkedin.com/in/emmanuelle-jupon-11b24a7b/"
-						className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+						href="/about"
+						className={cn(buttonVariants({ variant: "outline" }), "p-0")}
 					>
-						<Linkedin size={12} className="text-foreground" />
+						Qui suis-je ?
 					</Link>
 					<Link
-						href="https://www.instagram.com/designjemma/"
-						className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+						href="/projets"
+						className={cn(buttonVariants({ variant: "outline" }), "p-0")}
 					>
-						<Insta size={12} className="text-foreground" />
+						Projets
 					</Link>
+					<Link
+						href="/contact"
+						className={cn(buttonVariants({ variant: "outline" }), "p-0")}
+					>
+						Contact
+					</Link>
+					
 				</ul>
 			</Section>
 		</header>

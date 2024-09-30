@@ -8,7 +8,7 @@ const Hero = () => {
 	return (
 		<Section className="flex max-lg:flex-col items-start gap-4">
 			<div className="flex-[3] w-full flex flex-col gap-2">
-				<h2 className="font-caption font-bold text-5xl text-primary">Emmanuelle Jupon</h2>
+				<h1 className="font-caption font-bold text-5xl text-primary">Emmanuelle Jupon</h1>
 				<h3 className="text-3xl font-caption">
 					Développeuse Front-End | UX/UI Designer | Création de Sites Web
 				</h3>
