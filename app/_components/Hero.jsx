@@ -8,9 +8,10 @@ const Hero = () => {
 	return (
 		<Section className="flex max-lg:flex-col items-start gap-4">
 			<div className="flex-[3] w-full flex flex-col gap-2">
+				<p className="font-caption font-bold text-5xl text-primary">Bonjour, je suis</p>
 				<h1 className="font-caption font-bold text-5xl text-primary">Emmanuelle Jupon</h1>
 				<h3 className="text-3xl font-caption">
-					Développeuse Front-End | UX/UI Designer | Création de Sites Web
+					Développeuse Front-End | UX/UI Designer | Créatrice de Sites Web
 				</h3>
 				<p className="text-base">
 					Je suis on{" "} <Code className="inline-flex items-center gap-1">Développeuse front-end 👩‍💻</Code> passionnée par le design UX/UI. J'aime collaborer sur des projets qui allient créativité et performance, en utilisant des outils comme React et Figma. Ensemble, nous pouvons créer des expériences digitales qui font la différence !
