@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import Section from "./Section";
+
 
 const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -67,7 +67,7 @@ const Header = () => {
 				{/* Menu Mobile avec animation */}
 				<ul
 					id="toggled-menu"
-					className={`absolute top-16 left-0 w-full p-6 flex flex-col items-center gap-4 bg-background border-b transition-transform duration-500 ease-in-out ${
+					className={`absolute top-16 left-0 w-full p-6 flex flex-col items-center gap-4 bg-background border-b transition-transform duration-500 ease-in-out  ${
 						menuOpen ? "translate-x-0" : "-translate-x-full"
 					} md:hidden`}
 				>
@@ -95,7 +95,7 @@ const Header = () => {
 					<Link
 						href="/contact"
 						onClick={toggleMenu}
-						className={cn(buttonVariants({ variant: "outline" }), "p-0")}
+						className={cn(buttonVariants({ variant: "outline" }), "p-0 ")}
 					>
 						Contact
 					</Link>
