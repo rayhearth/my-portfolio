@@ -64,7 +64,6 @@ export default function RootLayout({ children }) {
 		<html lang="fr" className="h-full">
 			<body className={cn(fredoka, oswald.variable, "bg-background text-foreground"  )}>
 				<Header/>
-				<Spacing size="md" />
 				<main>{children}</main>
 			</body>
 		</html>

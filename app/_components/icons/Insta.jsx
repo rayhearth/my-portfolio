@@ -1,6 +1,6 @@
 import React from "react";
 
-const Githubicon = ({size}) => {
+const Instaicon = ({size}) => {
 	return (
 		<svg
 			width={size}
@@ -16,4 +16,4 @@ const Githubicon = ({size}) => {
 	);
 };
 
-export default Githubicon;
+export default Instaicon;

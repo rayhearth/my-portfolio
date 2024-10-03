@@ -1,4 +1,4 @@
-"use client"; // Indique que ce composant doit être rendu côté client
+"use client";
 
 import React, { useState } from "react";
 import { buttonVariants } from "@/components/ui/button";

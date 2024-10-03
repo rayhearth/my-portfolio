@@ -1,28 +1,73 @@
 import React from "react";
 import Section from "./Section";
-import Code from "./Code"
-
-
+import Reseaux from "./Reseaux";
+import LightDarkToggle from "./LightDarkToggle";
 
 const Hero = () => {
 	return (
-		<Section className="flex max-lg:flex-col items-start gap-4">
-			<div className="flex-[3] w-full flex flex-col gap-2">
-				<p className="font-caption font-bold text-5xl text-primary">Bonjour, je suis</p>
-				<h1 className="font-caption font-bold text-5xl text-primary">Emmanuelle Jupon</h1>
-				<h3 className="text-3xl font-caption">
-					Développeuse Front-End | UX/UI Designer | Créatrice de Sites Web
-				</h3>
-				<p className="text-base">
-					Je suis on{" "} <Code className="inline-flex items-center gap-1">Développeuse front-end 👩‍💻</Code> passionnée par le design UX/UI. J'aime collaborer sur des projets qui allient créativité et performance, en utilisant des outils comme React et Figma. Ensemble, nous pouvons créer des expériences digitales qui font la différence !
-				</p>
+		<Section className="grid items-start gap-4 p-4">
+			<div className="grid grid-cols-2 gap-4 items-stretch p-0">
+				{/* Carte 1 : Introduction */}
+				<div className="flex flex-col gap-2 bg-secondary p-1 rounded-lg">
+					<p className="font-caption text-2xl font-bold text-primary">
+						Bonjour, je suis
+					</p>
+					<h1 className="font-caption text-2xl font-bold text-primary">
+						Emmanuelle Jupon
+					</h1>
+					<h3 className="text-lg font-caption">
+						Développeuse Front-End | UX/UI Designer | Créatrice de Sites Web
+					</h3>
+				</div>
+
+				{/* Carte 3 : Mode Light */}
+				<LightDarkToggle/>
 			</div>
-			<div className="flex-[2] max-md:m-auto ml-auto">
-				<img
-					src="./photo_profile.png"
-					className="w-full h-auto max-w-xs max-md:w-56"
-					alt="Emmanuelle Jupon picture"
-				/>
+
+			<div className="grid grid-cols-2 gap-4 items-stretch p-0 ">
+				{/* Carte 2 : Image profile */}
+				<div className="max-h-80 h-full">
+					<img
+						src="./photo_profile.png"
+						className="h-full w-full object-cover rounded-lg"
+						alt="Emmanuelle Jupon"
+					/>
+				</div>
+
+				{/* Cartes A propos et Réseaux */}
+
+				<div className="flex flex-col justify-between gap-4 h-full">
+					{/* Carte 4 : À propos */}
+					<div className="flex flex-col flex-grow gap-2 p-4 bg-blue-100 rounded-lg">
+						<h2 className="font-caption text-xl font-bold">À Propos</h2>
+						<p className="text-sm">
+							Passionnée de design, j’aime chercher des solutions pour une
+							expérience digitale adaptée à vos besoins.
+						</p>
+					</div>
+					{/* Carte 6 : Réseaux sociaux */}
+					<Reseaux />
+				</div>
+			</div>
+
+			<div className="grid grid-cols-2 gap-4 items-stretch p-0">
+				{/* Carte 5 : Mes projets */}
+				<div className="flex flex-col justify-center items-center bg-cyan-100 rounded-lg p-4">
+					<p className="font-caption text-xl font-bold">Mes projets</p>
+					<span className="rotate-90 text-lg font-bold">→</span>
+				</div>
+
+				{/* Carte 7 : Stack technique */}
+				<div className="flex flex-col justify-center items-center bg-pink-200 rounded-lg p-4">
+					<h2 className="font-caption text-xl font-bold">Ma stack</h2>
+					<div className="flex space-x-4 mt-2">
+						{/* Icônes de la stack technique */}
+						<img src="icon-ai.svg" alt="Adobe Illustrator" />
+						<img src="icon-html.svg" alt="HTML" />
+						<img src="icon-react.svg" alt="React" />
+						<img src="icon-wordpress.svg" alt="WordPress" />
+					</div>
+				</div>
 			</div>
 		</Section>
 	);
