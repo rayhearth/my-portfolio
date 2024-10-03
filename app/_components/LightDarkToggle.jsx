@@ -41,10 +41,10 @@ const LightDarkToggle = () => {
 				{/* Animation entre lune et soleil */}
 				<motion.div
 					key={isDarkMode ? "moon" : "sun"}
-					initial={{ opacity: 0, y: isDarkMode ? -50 : 50 }}  // Lune remonte, soleil descend
-					animate={{ opacity: 1, y: 0 }}  // Alignement vertical
-					exit={{ opacity: 0, y: isDarkMode ? 50 : -50 }}  // Soleil descend, lune remonte
-					transition={{ duration: 0.75 }}  // Transition douce
+					initial={{ opacity: 0, y: isDarkMode ? -50 : 50 }}
+					animate={{ opacity: 1, y: 0 }}
+					exit={{ opacity: 0, y: isDarkMode ? 50 : -50 }}
+					transition={{ duration: 0.75 }}
 				>
 					{isDarkMode ? (
 						<MoonStar className="w-6 h-6 text-primary" />

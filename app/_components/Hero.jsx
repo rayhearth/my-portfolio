@@ -38,7 +38,7 @@ const Hero = () => {
 
 				<div className="flex flex-col justify-between gap-4 h-full">
 					{/* Carte 4 : À propos */}
-					<div className="flex flex-col flex-grow gap-2 p-4 bg-blue-100 rounded-lg">
+					<div className="flex flex-col flex-grow gap-2 p-4 bg-accent rounded-lg">
 						<h2 className="font-caption text-xl font-bold">À Propos</h2>
 						<p className="text-sm">
 							Passionnée de design, j’aime chercher des solutions pour une
@@ -52,13 +52,13 @@ const Hero = () => {
 
 			<div className="grid grid-cols-2 gap-4 items-stretch p-0">
 				{/* Carte 5 : Mes projets */}
-				<div className="flex flex-col justify-center items-center bg-cyan-100 rounded-lg p-4">
+				<div className="flex flex-col justify-center items-center bg-accent rounded-lg p-4">
 					<p className="font-caption text-xl font-bold">Mes projets</p>
 					<span className="rotate-90 text-lg font-bold">→</span>
 				</div>
 
 				{/* Carte 7 : Stack technique */}
-				<div className="flex flex-col justify-center items-center bg-pink-200 rounded-lg p-4">
+				<div className="flex flex-col justify-center items-center bg-border rounded-lg p-4">
 					<h2 className="font-caption text-xl font-bold">Ma stack</h2>
 					<div className="flex space-x-4 mt-2">
 						{/* Icônes de la stack technique */}
