@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import { Badge } from "@/components/ui/badge";
-import ReactLogo from "./icons/ReactLogo";
+import ReactIcon from "./icons/ReactIcon";
 import NextLogo from "./icons/NextLogo";
 import ViteLogo from "./icons/Vite";
 import Code from "./Code";
@@ -15,7 +15,7 @@ const Skills = () => {
 			</h2>
 			<div className="flex max-md:flex-col gap-4">
 				<div className="flex flex-col gap-2">
-					<ReactLogo
+					<ReactIcon
 						size={42}
 						className="animate-spin"
 						style={{ animationDuration: "10s" }}

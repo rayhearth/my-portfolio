@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import Reseaux from "./Reseaux";
+import Stack from "./Stack";
 import LightDarkToggle from "./LightDarkToggle";
 
 const Hero = () => {
@@ -58,16 +59,7 @@ const Hero = () => {
 				</div>
 
 				{/* Carte 7 : Stack technique */}
-				<div className="flex flex-col justify-center items-center bg-border rounded-lg p-4">
-					<h2 className="font-caption text-xl font-bold">Ma stack</h2>
-					<div className="flex space-x-4 mt-2">
-						{/* Icônes de la stack technique */}
-						<img src="icon-ai.svg" alt="Adobe Illustrator" />
-						<img src="icon-html.svg" alt="HTML" />
-						<img src="icon-react.svg" alt="React" />
-						<img src="icon-wordpress.svg" alt="WordPress" />
-					</div>
-				</div>
+				<Stack/>
 			</div>
 		</Section>
 	);
