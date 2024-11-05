@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 const Reseaux = () => {
   return (
-    <div className='flex flex-col flex-grow bg-secondary-foreground rounded-lg p-4 gap-4'>
+    <div className='flex flex-col flex-grow bg-secondary-foreground dark:bg-secondary dark:border dark:border-orange-400 rounded-lg p-4 gap-4'>
 			<h2 className="font-caption text-xl font-bold">Vous pouvez me retrouver sur:</h2>
       <ul className="flex items-center gap-2">
       <Link
