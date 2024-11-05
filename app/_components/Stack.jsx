@@ -1,6 +1,14 @@
-import React from "react";
+"use client";
 
+import React from "react";
+import { motion } from "framer-motion";
 import ReactIcon from "./icons/ReactIcon";
+import GithubIcon from "./icons/GithubIcon";
+import WordpressIcon from "./icons/WordpressIcon";
+import IllustratorIcon from "./icons/IllustratorIcon";
+import Vite from "./icons/Vite";
+import JsIcon from "./icons/JsIcon";
+import FigmaIcon from "./icons/FigmaIcon";
 
 const Stack = () => {
 	return (
@@ -8,65 +16,19 @@ const Stack = () => {
 			<h2 className="font-caption text-xl font-bold mb-4">Ma stack</h2>
 
 			<div className="overflow-hidden w-full">
-				<div className="flex space-x-8 carousel">
-					<img
-						src="./illustrator.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img
-						src="./photoshop.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img
-						src="./indesign.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img
-						src="./figma.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img src="icon-html.svg" alt="HTML" className="w-16 h-16" />
-					<img src="./sass.svg" alt="React" className="w-16 h-16" />
-					<img src="./js.svg" alt="React" className="w-16 h-16" />
-					<ReactIcon
-						size={42}
-						
-					/>
-					<img src="./wordpress.svg" alt="WordPress" className="w-16 h-16" />
-					{/* Répéter les icônes pour assurer la continuité */}
-					<img
-						src="./illustrator.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img
-						src="./photoshop.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img
-						src="./indesign.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img
-						src="./figma.svg"
-						alt="Adobe Illustrator"
-						className="w-16 h-16"
-					/>
-					<img src="icon-html.svg" alt="HTML" className="w-16 h-16" />
-					<img src="./sass.svg" alt="React" className="w-16 h-16" />
-					<img src="./js.svg" alt="React" className="w-16 h-16" />
-					<ReactIcon
-						size={42}
-						
-					/>
-					<img src="./wordpress.svg" alt="WordPress" className="w-16 h-16" />
-				</div>
+				<motion.div
+					className="flex space-x-8"
+					animate={{ x: [-100, 0, -100] }} // Mouvement continu
+					transition={{ repeat: Infinity, duration: 10, ease: "linear" }} // Répète l'animation en boucle
+				>
+					<Vite size={42} />
+					<GithubIcon size={42} />
+					<WordpressIcon size={42} />
+					<ReactIcon size={42} />
+					<IllustratorIcon size={42} />
+					<FigmaIcon size={42} />
+					<JsIcon size={42} />
+				</motion.div>
 			</div>
 		</div>
 	);

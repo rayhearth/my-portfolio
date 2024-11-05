@@ -1,6 +1,6 @@
 import React from "react";
 
-const Githubicon = ({size}) => {
+const GithubIcon = ({size}) => {
 	return (
 		<svg
 			width={size}
@@ -19,4 +19,4 @@ const Githubicon = ({size}) => {
 	);
 };
 
-export default Githubicon;
+export default GithubIcon;
