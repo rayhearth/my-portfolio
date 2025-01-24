@@ -1,5 +1,5 @@
 import Spacing from "../_components/Spacing.jsx";
-import Code from "./Code";
+import Code from "../_components/Code.jsx";
 
 
 export default function About() {
