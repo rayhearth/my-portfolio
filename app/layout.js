@@ -47,13 +47,6 @@ export const metadata = {
 		type: "website",
 		locale: "fr_FR",
 	},
-	twitter: {
-		card: "summary_large_image",
-		site: "@VotreCompteTwitter",  // Remplacez par votre compte Twitter
-		title: "Portfolio Emmanuelle Jupon Graphiste - Développeuse Front-End",
-		description: "Explorez mon portfolio pour voir comment je fusionne le développement front-end avec le graphisme et le webdesign.",
-		image: "/path/to/your-twitter-image.jpg",  // Remplacez par l'URL réelle de votre image pour Twitter
-	},
 	alternates: {
 		canonical: "https://jemma-design.fr/",
 	},
